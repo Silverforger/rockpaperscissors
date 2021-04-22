@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.container header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border: 3px solid #fff;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    animation-name: ballistic;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+    background-color:aqua;
+    color: #000;
+}
+
+@keyframes ballistic {
+    0% {background-color:aqua;}
+    25% {background-color:rgb(255, 238, 5);}
+    50% {background-color:rgb(252, 11, 11);}
+    75% {background-color:rgb(255, 255, 255);}
+    100% {background-color:rgb(111, 46, 231);}
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.btn {
+    margin: 30px;
+    width: 250px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 1.6em;
+}
+
+.score-container {
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.score-container h2 {
+    display: grid;
+    margin: 20px auto;
+    width: 50%;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid white;
+    justify-content: center;
+}
